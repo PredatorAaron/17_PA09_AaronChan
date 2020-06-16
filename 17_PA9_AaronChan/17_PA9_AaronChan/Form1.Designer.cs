@@ -43,7 +43,7 @@
             // lbl_amount
             // 
             this.lbl_amount.AutoSize = true;
-            this.lbl_amount.Location = new System.Drawing.Point(228, 85);
+            this.lbl_amount.Location = new System.Drawing.Point(204, 115);
             this.lbl_amount.Name = "lbl_amount";
             this.lbl_amount.Size = new System.Drawing.Size(43, 13);
             this.lbl_amount.TabIndex = 0;
@@ -52,7 +52,7 @@
             // lbl_selectcurrency
             // 
             this.lbl_selectcurrency.AutoSize = true;
-            this.lbl_selectcurrency.Location = new System.Drawing.Point(228, 143);
+            this.lbl_selectcurrency.Location = new System.Drawing.Point(204, 173);
             this.lbl_selectcurrency.Name = "lbl_selectcurrency";
             this.lbl_selectcurrency.Size = new System.Drawing.Size(82, 13);
             this.lbl_selectcurrency.TabIndex = 0;
@@ -61,7 +61,7 @@
             // lbl_value
             // 
             this.lbl_value.AutoSize = true;
-            this.lbl_value.Location = new System.Drawing.Point(228, 257);
+            this.lbl_value.Location = new System.Drawing.Point(204, 287);
             this.lbl_value.Name = "lbl_value";
             this.lbl_value.Size = new System.Drawing.Size(34, 13);
             this.lbl_value.TabIndex = 0;
@@ -69,15 +69,16 @@
             // 
             // txt_amount
             // 
-            this.txt_amount.Location = new System.Drawing.Point(323, 82);
+            this.txt_amount.Location = new System.Drawing.Point(299, 112);
             this.txt_amount.Name = "txt_amount";
-            this.txt_amount.Size = new System.Drawing.Size(198, 20);
+            this.txt_amount.Size = new System.Drawing.Size(295, 20);
             this.txt_amount.TabIndex = 1;
             this.txt_amount.TextChanged += new System.EventHandler(this.txt_amount_TextChanged);
+            this.txt_amount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_amount_KeyPress);
             // 
             // btn_convert
             // 
-            this.btn_convert.Location = new System.Drawing.Point(525, 138);
+            this.btn_convert.Location = new System.Drawing.Point(501, 168);
             this.btn_convert.Name = "btn_convert";
             this.btn_convert.Size = new System.Drawing.Size(75, 23);
             this.btn_convert.TabIndex = 3;
@@ -87,7 +88,7 @@
             // 
             // btn_clear
             // 
-            this.btn_clear.Location = new System.Drawing.Point(525, 171);
+            this.btn_clear.Location = new System.Drawing.Point(501, 201);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(75, 23);
             this.btn_clear.TabIndex = 4;
@@ -98,7 +99,7 @@
             // rdb_USdollars
             // 
             this.rdb_USdollars.AutoSize = true;
-            this.rdb_USdollars.Location = new System.Drawing.Point(355, 174);
+            this.rdb_USdollars.Location = new System.Drawing.Point(331, 204);
             this.rdb_USdollars.Name = "rdb_USdollars";
             this.rdb_USdollars.Size = new System.Drawing.Size(75, 17);
             this.rdb_USdollars.TabIndex = 5;
@@ -110,7 +111,7 @@
             // rdb_JapaneseYen
             // 
             this.rdb_JapaneseYen.AutoSize = true;
-            this.rdb_JapaneseYen.Location = new System.Drawing.Point(355, 141);
+            this.rdb_JapaneseYen.Location = new System.Drawing.Point(331, 171);
             this.rdb_JapaneseYen.Name = "rdb_JapaneseYen";
             this.rdb_JapaneseYen.Size = new System.Drawing.Size(93, 17);
             this.rdb_JapaneseYen.TabIndex = 5;
@@ -120,17 +121,17 @@
             // 
             // txt_convertedAmt
             // 
-            this.txt_convertedAmt.Location = new System.Drawing.Point(323, 254);
+            this.txt_convertedAmt.Location = new System.Drawing.Point(299, 284);
             this.txt_convertedAmt.Name = "txt_convertedAmt";
             this.txt_convertedAmt.ReadOnly = true;
-            this.txt_convertedAmt.Size = new System.Drawing.Size(198, 20);
+            this.txt_convertedAmt.Size = new System.Drawing.Size(295, 20);
             this.txt_convertedAmt.TabIndex = 1;
             this.txt_convertedAmt.TextChanged += new System.EventHandler(this.txt_amount_TextChanged);
             // 
             // rdb_MYR
             // 
             this.rdb_MYR.AutoSize = true;
-            this.rdb_MYR.Location = new System.Drawing.Point(355, 208);
+            this.rdb_MYR.Location = new System.Drawing.Point(331, 238);
             this.rdb_MYR.Name = "rdb_MYR";
             this.rdb_MYR.Size = new System.Drawing.Size(108, 17);
             this.rdb_MYR.TabIndex = 6;

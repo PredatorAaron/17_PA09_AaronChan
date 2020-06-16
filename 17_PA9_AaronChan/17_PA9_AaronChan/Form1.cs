@@ -32,12 +32,12 @@ namespace _17_PA9_AaronChan
             double AmountEntered;
             double convertedValue;
 
-            if((rdb_USdollars.Checked == false) || (rdb_JapaneseYen.Checked == false))
+            if((rdb_USdollars.Checked == false) || (rdb_JapaneseYen.Checked == false) || (rdb_MYR.Checked == false))
             {
                 txt_convertedAmt.Text = "Select at least one type of currency to convert";
             }
 
-            if(rdb_USdollars.Checked == true)
+            if(rdb_USdollars.Checked == true && txt_amount.TextLength >= 1)
             {
                 AmountEntered = double.Parse(txt_amount.Text);
                 convertedValue = AmountEntered * 0.74;
@@ -45,7 +45,7 @@ namespace _17_PA9_AaronChan
                 txt_convertedAmt.Text = convertedValue.ToString();
             }
 
-            if (rdb_JapaneseYen.Checked == true)
+            if (rdb_JapaneseYen.Checked == true && txt_amount.TextLength >= 1)
             {
                 AmountEntered = double.Parse(txt_amount.Text);
                 convertedValue = AmountEntered * 81.97;
@@ -53,7 +53,7 @@ namespace _17_PA9_AaronChan
                 txt_convertedAmt.Text = convertedValue.ToString();
             }
 
-            if(rdb_MYR.Checked == true)
+            if (rdb_MYR.Checked == true && txt_amount.TextLength >= 1)
             {
                 AmountEntered = double.Parse(txt_amount.Text);
                 convertedValue = AmountEntered * 3.01;
@@ -61,28 +61,44 @@ namespace _17_PA9_AaronChan
                 txt_convertedAmt.Text = convertedValue.ToString();
             }
 
-            try
+            if (txt_amount.TextLength == 0 && (rdb_USdollars.Checked == false) || (rdb_JapaneseYen.Checked == false) || (rdb_MYR.Checked == false))
             {
-                txt_convertedAmt.Text = "Please enter numbers only";
+                txt_convertedAmt.Text = "Please Enter a Number and Checked One of these Currency";
             }
-            catch (FormatException)
-            {
 
+            if (txt_amount.TextLength == 0 && (rdb_USdollars.Checked == true) || (rdb_JapaneseYen.Checked == true) || (rdb_MYR.Checked == true))
+            {
+                txt_convertedAmt.Text = "Please Enter a Number";
             }
         }
 
         private void btn_clear_Click(object sender, EventArgs e)
         {
             txt_convertedAmt.Text = "";
-            txt_amount.Text = "";
+            txt_amount.Text = "";          
 
             rdb_USdollars.Checked = false;
-            rdb_JapaneseYen.Checked = false;       
+            rdb_JapaneseYen.Checked = false;
+            rdb_MYR.Checked = false;
         }
 
         private void rdb_USdollars_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txt_amount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
