@@ -8,3 +8,13 @@ F:\Game Intergration And Testing\17_PA9_AaronChan\17_PA9_AaronChan\17_PA9_AaronC
 F:\Game Intergration And Testing\17_PA9_AaronChan\17_PA9_AaronChan\17_PA9_AaronChan\obj\Debug\17_PA9_AaronChan.csproj.CoreCompileInputs.cache
 F:\Game Intergration And Testing\17_PA9_AaronChan\17_PA9_AaronChan\17_PA9_AaronChan\obj\Debug\17_PA9_AaronChan.exe
 F:\Game Intergration And Testing\17_PA9_AaronChan\17_PA9_AaronChan\17_PA9_AaronChan\obj\Debug\17_PA9_AaronChan.pdb
+C:\Users\VANXEUS\Desktop\17_PA9_AaronChan\17_PA9_AaronChan\bin\Debug\17_PA9_AaronChan.exe.config
+C:\Users\VANXEUS\Desktop\17_PA9_AaronChan\17_PA9_AaronChan\bin\Debug\17_PA9_AaronChan.exe
+C:\Users\VANXEUS\Desktop\17_PA9_AaronChan\17_PA9_AaronChan\bin\Debug\17_PA9_AaronChan.pdb
+C:\Users\VANXEUS\Desktop\17_PA9_AaronChan\17_PA9_AaronChan\obj\Debug\17_PA9_AaronChan.csprojAssemblyReference.cache
+C:\Users\VANXEUS\Desktop\17_PA9_AaronChan\17_PA9_AaronChan\obj\Debug\_17_PA9_AaronChan.txt_convetedAmt.resources
+C:\Users\VANXEUS\Desktop\17_PA9_AaronChan\17_PA9_AaronChan\obj\Debug\_17_PA9_AaronChan.Properties.Resources.resources
+C:\Users\VANXEUS\Desktop\17_PA9_AaronChan\17_PA9_AaronChan\obj\Debug\17_PA9_AaronChan.csproj.GenerateResource.cache
+C:\Users\VANXEUS\Desktop\17_PA9_AaronChan\17_PA9_AaronChan\obj\Debug\17_PA9_AaronChan.csproj.CoreCompileInputs.cache
+C:\Users\VANXEUS\Desktop\17_PA9_AaronChan\17_PA9_AaronChan\obj\Debug\17_PA9_AaronChan.exe
+C:\Users\VANXEUS\Desktop\17_PA9_AaronChan\17_PA9_AaronChan\obj\Debug\17_PA9_AaronChan.pdb
