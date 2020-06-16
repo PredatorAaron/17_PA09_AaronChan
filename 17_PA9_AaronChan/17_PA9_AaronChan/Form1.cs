@@ -53,6 +53,14 @@ namespace _17_PA9_AaronChan
                 txt_convertedAmt.Text = convertedValue.ToString();
             }
 
+            if(rdb_MYR.Checked == true)
+            {
+                AmountEntered = double.Parse(txt_amount.Text);
+                convertedValue = AmountEntered * 3.01;
+
+                txt_convertedAmt.Text = convertedValue.ToString();
+            }
+
             try
             {
                 txt_convertedAmt.Text = "Please enter numbers only";
@@ -70,6 +78,11 @@ namespace _17_PA9_AaronChan
 
             rdb_USdollars.Checked = false;
             rdb_JapaneseYen.Checked = false;       
+        }
+
+        private void rdb_USdollars_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
